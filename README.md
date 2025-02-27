@@ -18,7 +18,7 @@ This project implements a **Machine Learning (ML) model** for predicting **house
 
 ## 📂 Project Structure
 ```
-house_price_predictor/
+house_price_api/
 │── data/                        # Raw & processed data
 │   ├── housing.csv              # Dataset
 │
@@ -26,19 +26,18 @@ house_price_predictor/
 │   ├── data_exploration.ipynb    # Data analysis & visualization
 │
 │── models/                        # Saved machine learning models
-│   ├── random_forest.pkl          # Final trained model
 │
 │── scripts/                       # API scripts
 │   ├── api.py                     # FastAPI implementation
-│   ├── train_model.py             # Model training script
 │
-│── tests/                         # Unit tests for the API
-│   ├── test_api.py                # API test cases
+│── tests/                         # Placeholder for unit tests
+│   ├── __init__.py                # Init file for test structure
 │
 │── Dockerfile                     # Docker setup for API deployment
 │── requirements.txt                # Python dependencies
 │── pyproject.toml                  # Poetry dependency management
 │── README.md                       # Project documentation
+│── LICENSE                         # License information
 ```
 
 ---
@@ -55,12 +54,7 @@ cd house_price_api
 poetry install
 ```
 
-### **3️⃣ Train the Model**
-```bash
-poetry run python scripts/train_model.py
-```
-
-### **4️⃣ Run the API Locally**
+### **3️⃣ Run the API Locally**
 ```bash
 poetry run uvicorn scripts.api:app --reload
 ```
@@ -151,14 +145,12 @@ This project is ready for **cloud deployment** on **Render / Heroku**. The follo
 
 ---
 
-### 🎯 Contributors
-👤 **Siva Karthikeya M**  
-💬 Contact: [writetokarthikeya99@gmail.com](mailto:your.email@example.com)
-
 ---
 
 ### 📜 License
 This project is licensed under the **MIT License**.
 
 ---
+
+
 
